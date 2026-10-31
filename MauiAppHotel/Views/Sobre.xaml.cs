@@ -6,4 +6,16 @@ public partial class Sobre : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        try
+        {
+            await Navigation.PushAsync(new ContratacaoHospedagem());
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlertAsync("Ops", ex.Message, "OK");
+        }
+    }
 }

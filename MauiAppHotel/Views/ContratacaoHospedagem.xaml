@@ -47,8 +47,7 @@
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" 
-                             />   
+                             Increment="1" />   
                     
                 </Grid>
 
@@ -57,7 +56,9 @@
 
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação" 
-                        TitleColor="{StaticResource Magenta}" />
+                        TitleColor="{StaticResource Magenta}"
+                        TextColor="{StaticResource Magenta}"
+                        ItemDisplayBinding="{Binding Descricao}" />
 
                 <Border Padding="10"
                         Margin="10">
@@ -69,6 +70,7 @@
                             <Label Text="Check-in:"
                                    TextColor="{StaticResource Magenta}" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/mm/yyyy" 
                                         TextColor="{StaticResource Magenta}"
                                         BackgroundColor="{StaticResource Black}" />
@@ -88,7 +90,8 @@
 
                 <VerticalStackLayout Spacing="10">
 
-                    <Button Text="Avançar" />
+                    <Button Text="Avançar" 
+                            Clicked="BtnAvancar_Clicked"/>
 
                     <Button Text="Sobre"
                             Clicked="BtnSobre_Clicked" />

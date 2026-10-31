@@ -27,6 +27,16 @@
 
              </VerticalStackLayout>
         </Border>
-      </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="10">
+
+            <Button Text="Voltar" 
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0"
+                    Clicked="Button_Clicked" />
+
+        </VerticalStackLayout>
+        
+    </VerticalStackLayout>
 
 </ContentPage>
