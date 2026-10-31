@@ -14,15 +14,17 @@
                HorizontalTextAlignment="Center"/>
 
         <Border Margin="10">
-            <HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="50">
                 <HorizontalStackLayout>
-                    <Label Text="Adultos: " />
+                    <Label Text="Adultos: " 
+                           TextColor="Magenta"/>
                     <Label Text="2" 
                            TextColor="Magenta" />                    
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
-                    <Label Text="Crianças: " />
+                    <Label Text="Crianças: "
+                           TextColor="Magenta"/>
                     <Label Text="1" 
                            TextColor="Magenta" />
                 </HorizontalStackLayout>                
@@ -32,20 +34,20 @@
         <Border Margin="10">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in: " />
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out: " />
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " />
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in: " TextColor="Magenta" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out: " TextColor="Magenta" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " TextColor="Magenta" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="19/11/2026 " />
-                <Label Grid.Row="1" Grid.Column="1" Text="22/11/2026 " />
-                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+                <Label Grid.Row="1" Grid.Column="0" Text="19/11/2026 " TextColor="Magenta" />
+                <Label Grid.Row="1" Grid.Column="1" Text="22/11/2026 " TextColor="Magenta" />
+                <Label Grid.Row="1" Grid.Column="2" Text="3" TextColor="Magenta" />
             </Grid>
         </Border>
 
         <Border Margin="10">
             <HorizontalStackLayout>
-                <Label Text="Valor Total: " />
-                <Label Text="R$750,00" />
+                <Label Text="Valor Total: " TextColor="Magenta" />
+                <Label Text="R$750,00" TextColor="Magenta"/>
             </HorizontalStackLayout>
         </Border>
 
