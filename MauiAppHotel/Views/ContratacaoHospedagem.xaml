@@ -10,6 +10,7 @@
                          Padding="10">
         <Label Text="Cálculo da Diária"
                FontFamily="PTSerifItalic"
+               HorizontalOptions="Center" 
                FontSize="40"
                TextColor="{StaticResource Magenta}" />
 
@@ -46,7 +47,8 @@
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" />   
+                             Increment="1" 
+                             />   
                     
                 </Grid>
 
@@ -67,20 +69,31 @@
                             <Label Text="Check-in:"
                                    TextColor="{StaticResource Magenta}" />
                             <DatePicker x:Name="dtpck_checkin"
-                                        Format="dd/mm/yyyy" />
+                                        Format="dd/mm/yyyy" 
+                                        TextColor="{StaticResource Magenta}"
+                                        BackgroundColor="{StaticResource Black}" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
                             <Label Text="Check-out:"
                                    TextColor="{StaticResource Magenta}" />
                             <DatePicker x:Name="dtpck_checkout"
-                                        Format="dd/mm/yyyy" />
+                                        Format="dd/mm/yyyy" 
+                                        TextColor="{StaticResource Magenta}"
+                                        BackgroundColor="{StaticResource Black}" />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
 
                 </Border>
 
-                <Button Text="Avançar" />
+                <VerticalStackLayout Spacing="10">
+
+                    <Button Text="Avançar" />
+
+                    <Button Text="Sobre"
+                            Clicked="BtnSobre_Clicked" />
+
+                </VerticalStackLayout>
 
             </VerticalStackLayout>
             
