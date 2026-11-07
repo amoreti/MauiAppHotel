@@ -1,3 +1,5 @@
+using MauiAppHotel.Models;
+
 namespace MauiAppHotel.Views;
 
 public partial class ContratacaoHospedagem : ContentPage
@@ -6,7 +8,7 @@ public partial class ContratacaoHospedagem : ContentPage
 	public ContratacaoHospedagem()
 	{
 		InitializeComponent();
-		PropriedadesApp = (App)Application.Current;
+        PropriedadesApp = (App)Application.Current;
 
         pck_quarto.ItemsSource = PropriedadesApp.lista_quartos;
 
@@ -34,7 +36,20 @@ public partial class ContratacaoHospedagem : ContentPage
     {
         try
         {
-            await Navigation.PushAsync(new HospedagemContratada());
+            Hospedagem h = new Hospedagem()
+            {
+                QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
+                QntAdultos = Convert.ToInt32(stp_adultos.Value),
+                QntCriancas = Convert.ToInt32(stp_criancas.Value),
+                DataCheckIn = (DateTime)dtpck_checkin.Date,
+                DataCheckOut = (DateTime)dtpck_checkout.Date,
+            };
+
+            await Navigation.PushAsync(new HospedagemContratada()
+            {
+                BindingContext = h
+            });
+            
         }
         catch (Exception ex)
         {
