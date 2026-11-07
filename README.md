@@ -34,5 +34,6 @@ Apresenta informações sobre:
 - Curso realizado.
 - Data de desenvolvimento da atividade.
 
-🎥 Vídeo
-- Execução da tela "sobre": https://youtu.be/E_87IgW3YN0
+🎥 Vídeos
+- Execução da tela "sobre" (agenda 13): https://youtu.be/E_87IgW3YN0
+- Execução do app (agenda 14): https://youtu.be/hGamvCkiC40
